@@ -50,7 +50,9 @@ public class CuentaCorriente {
 	public void mostrarInformacion(boolean muestraInfo) {
 		
 		if(muestraInfo) {
+			
 			System.out.println("Nombre titular: " + nombre);
+			System.out.println("DNI: " + dni);
 			System.out.println("Saldo: " + saldo);
 		}
 		
