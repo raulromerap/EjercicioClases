@@ -22,6 +22,9 @@ public class Libro {
 	 */
 	private int prestados;
 
+	/**
+	 * Constructor 
+	 */
 	public Libro() {
 
 	}
@@ -30,6 +33,40 @@ public class Libro {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.ejemplares = ejemplares;
+		this.prestados = prestados;
+	}
+
+	
+	
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+	public int getEjemplares() {
+		return ejemplares;
+	}
+
+	public void setEjemplares(int ejemplares) {
+		this.ejemplares = ejemplares;
+	}
+
+	public int getPrestados() {
+		return prestados;
+	}
+
+	public void setPrestados(int prestados) {
 		this.prestados = prestados;
 	}
 
