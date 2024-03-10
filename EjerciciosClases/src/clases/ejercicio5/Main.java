@@ -37,8 +37,6 @@ public class Main {
 				
 				sc.nextLine();
 				
-				alumn.agrega(nombre,notaMedia);
-				
 				if(alumn.agrega(nombre, notaMedia)) {
 					System.out.println("Se ha agreagado correctamente");
 				}else {
@@ -51,9 +49,7 @@ public class Main {
 				nombre = sc.nextLine();
 				System.out.println("Introduce la nueva nota");
 				notaMedia = sc.nextDouble();
-				
-				alumn.modificar(nombre, notaMedia);
-				
+
 				if(alumn.modificar(nombre, notaMedia)) {
 					System.out.println("Se ha modificado correctamente");
 				}else {

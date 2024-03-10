@@ -22,6 +22,7 @@ public class AlumnoArray {
 
 		if (i < alumnos.length) {
 			alumnos[i] = new Alumno(nombre, notaMedia);
+			agregado = true;
 		}
 
 		return agregado;
@@ -56,14 +57,6 @@ public class AlumnoArray {
 		}
 		
 		return borrado;
-	}
-	
-	public static int encuentraAlumno(String nombre) {
-		int pos = 0;
-		while(pos < alumnos.length) {
-			
-		}
-		return pos;
 	}
 	
 }
