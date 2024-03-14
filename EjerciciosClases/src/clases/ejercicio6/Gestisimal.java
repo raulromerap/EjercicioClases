@@ -3,7 +3,7 @@ package clases.ejercicio6;
 public class Gestisimal {
 
 	private int codigo;
-	private String descripcion;
+	private String descripcion = "";
 	private double precioCompra;
 	private double precioVenta;
 	private int stock;
@@ -32,10 +32,6 @@ public class Gestisimal {
 
 	public int getCodigo() {
 		return codigo;
-	}
-
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
 	}
 
 	public String getDescripcion() {
@@ -71,7 +67,17 @@ public class Gestisimal {
 	}
 	
 	public String toString() {
-		return this.codigo + "\n" + this.descripcion + "\n" + this.precioCompra + "\n" + this.precioVenta + "\n" + this.stock + "\n";
+		String cadena = "";
+		
+		cadena += "------------------------\n";
+		cadena +=  this.codigo + "\n";
+		cadena +=  this.descripcion + "\n";
+		cadena +=  this.precioCompra + "\n";
+		cadena +=  this.precioVenta + "\n";
+		cadena +=  this.stock + "\n";
+		cadena += "------------------------\n";
+		
+		return cadena;
 	}
 
 }

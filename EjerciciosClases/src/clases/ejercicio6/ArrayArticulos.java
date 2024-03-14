@@ -8,7 +8,6 @@ public class ArrayArticulos {
 		int i = 0;
 		while (i < art.length && art[i] != null) {
 			System.out.println(art[i]);
-			System.out.println("-----------------");
 			i++;
 		}
 	}
