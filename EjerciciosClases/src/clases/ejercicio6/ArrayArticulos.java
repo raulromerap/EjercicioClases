@@ -52,24 +52,27 @@ public class ArrayArticulos {
 		}
 		
 		if(i < art.length) {
-			art[i].setPrecioVenta(precioVenta);
 			modificado = true;
+			art[i].setPrecioVenta(precioVenta);
 		}
 		
 		return modificado;
 	}
 	
-	public boolean entradaMercancia(int codigo, int cant) {
+	public boolean entradaMercancia(Gestisimal arts, int cant) {
 		boolean entrada = false;
 		int i = 0;
 		
-		while(i < art.length && (art == null || !art[i].equals(codigo))) {
+		
+		while(i < art.length && (art == null || !art[i].equals(arts))) {
 			i++;
 		}
 		
 		if(i<art.length) {
-			art[i].setStock(art[i].getStock() + cant);
+			int stockInicial = art[i].getStock();
 			entrada = true;
+			stockInicial += cant;
+			art[i].setStock(stockInicial);
 		}
 		
 		return entrada;
@@ -84,7 +87,7 @@ public class ArrayArticulos {
 		}
 		
 		if(i<art.length) {
-			art[i].setStock(art[i].getStock() - cant);
+			
 			salida = true;
 		}
 		
